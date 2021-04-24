@@ -18,9 +18,9 @@ test1=True
 test2=True
 
 while (test1 and test2):
-    test1=emetteur(addest, s)
+    test1,name=emetteur(addest, s)
     if (test1):
-        addest, test2=recepteur(s)
+        addest, test2=recepteur(s,name)
 
 
 print("Fin de la conversation")
