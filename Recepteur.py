@@ -8,7 +8,10 @@ Created on Fri Apr  9 14:09:16 2021
 import socket
 
 def recepteur(s):
+    name=socket.gethostname()
     data,addr=s.recvfrom(1024)
-    print("sender : ", addr)
-    print("data : ", data.decode('utf-8'))
-    return (addr, data!="quit")
+    txt=data.decode('utf-8')
+    if (txt!="quit"):
+        print("sender : ", name)
+        print("data : ", txt)
+    return (addr, txt!="quit")

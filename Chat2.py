@@ -21,3 +21,6 @@ while (test1 and test2):
     adenv, test1=recepteur(s)
     if (test1): 
         test2=emetteur(adenv, s) 
+
+
+print("Fin de la conversation")

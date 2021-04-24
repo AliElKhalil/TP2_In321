@@ -21,3 +21,6 @@ while (test1 and test2):
     test1=emetteur(addest, s)
     if (test1):
         addest, test2=recepteur(s)
+
+
+print("Fin de la conversation")

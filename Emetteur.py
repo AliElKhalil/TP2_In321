@@ -12,8 +12,8 @@ def emetteur(addr, s):
     IP = addr[0]
     PORT = addr[1]
     data = input("saisir un txt:")
-    if (data!="quit"):
-        s.sendto(data.encode('utf-8'),(IP,PORT))
+    s.sendto(data.encode('utf-8'),(IP,PORT))
+    print("Message envoyé")
     return (data!="quit")
 
 
