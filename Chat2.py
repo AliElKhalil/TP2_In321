@@ -16,12 +16,11 @@ s.bind(addr) # association de la socket avec IP/PORT
 
 test1=True
 test2=True
-name=socket.gethostname()
 
 while (test1 and test2):
-    adenv, test1=recepteur(s,name)
+    adenv, test1=recepteur(s)
     if (test1): 
-        test2,name=emetteur(adenv, s) 
+        test2=emetteur(adenv, s) 
 
 
 print("Fin de la conversation")
