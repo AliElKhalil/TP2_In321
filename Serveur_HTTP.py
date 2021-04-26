@@ -23,7 +23,7 @@ http_head += "\r\n"
 data = "<html><head><meta charset='utf-8'/></head>"
 data += "<body><h1>In321 is the best course ! </h1>"
 data += "\r\n"
-#data += f'<img src="data:image/png;base64, {encoded_string}"alt="No doubt gif">' 
+data += f'<img src="data:image/png;base64, {encoded_string}"alt="No doubt gif">' 
 data += "</body></html>\r\n"
 data += "\r\n"
 http_response = http_head.encode("ascii") + data.encode("utf-8")
